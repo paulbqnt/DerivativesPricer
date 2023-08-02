@@ -33,7 +33,7 @@ double SimpleMonteCarlo1(double Expiry,
     return mean;
 }
 
-int temp(){
+int main1(){
 
     double Expiry;
     double Strike;

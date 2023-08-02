@@ -2,7 +2,7 @@
 #define DERIVATIVESPRICER_SIMPLEMC_H
 #include "PayOff1.h"
 
-double SimpleMonteCarlo2(const PayOff& thePayOff,
+double SimpleMonteCarlo(const PayOff& thePayOff,
                         double Expiry,
                         double Spot,
                         double Vol,

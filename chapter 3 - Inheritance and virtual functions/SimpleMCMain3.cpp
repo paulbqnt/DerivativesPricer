@@ -1,9 +1,12 @@
-#include "../Headers/SimpleMC.h"
+//
+// Created by zalman on 8/2/23.
+//
+#include "../Headers/SimpleMC2.h"
 #include <iostream>
 using namespace std;
 
-int main2(){
-
+int main3()
+{
     double Expiry;
     double Strike;
     double Spot;
@@ -29,11 +32,11 @@ int main2(){
     cout << "\nNumber of paths\n";
     cin >> NumberOfPaths;
 
-    PayOff callPayOff(Strike, PayOff::call);
-    PayOff putPayOff(Strike, PayOff::put);
+    PayOffCall callPayOff(Strike);
+    PayOffPut putPayOff(Strike);
 
-    double resultCall = SimpleMonteCarlo(callPayOff, Expiry, Spot, Vol, r, NumberOfPaths);
-    double resultPut = SimpleMonteCarlo(putPayOff, Expiry, Spot, Vol, r, NumberOfPaths);
+    double resultCall = SimpleMonteCarlo2(callPayOff, Expiry, Spot, Vol, r, NumberOfPaths);
+    double resultPut = SimpleMonteCarlo2(putPayOff, Expiry, Spot, Vol, r, NumberOfPaths);
 
     cout << "the prices are " << resultCall << "  for the call and " << resultPut << "  for the put\n";
     double tmp;

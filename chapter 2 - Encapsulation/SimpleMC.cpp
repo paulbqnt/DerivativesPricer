@@ -6,7 +6,7 @@
 using namespace std;
 #endif
 
-double SimpleMonteCarlo2(
+double SimpleMonteCarlo(
         const PayOff& thePayOff,
         double Expiry,
         double Spot,

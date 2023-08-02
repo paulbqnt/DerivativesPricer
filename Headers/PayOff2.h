@@ -1,32 +1,36 @@
 #ifndef DERIVATIVESPRICER_PAYOFF2_H
 #define DERIVATIVESPRICER_PAYOFF2_H
 
-class PayOff
-{
+class PayOff {
+
 public:
-    PayOff(){};
-    virtual double operator()(double Spot) const=0;
-    virtual ~PayOff(){}
-private:
+
+    PayOff() {};
+    virtual double operator() (double Spot) const = 0;
+    virtual ~PayOff() {};
+
 };
 
-class PayOffCall : public PayOff
-{
+class PayOffCall : public PayOff {
+
 public:
     PayOffCall(double Strike_);
-    virtual double operator()(double Spot) const;
-    virtual ~PayOffCall(){}
+    virtual double operator() (double Spot) const override;
+    virtual ~PayOffCall() {};
+
 private:
     double Strike;
 };
 
-class PayOffPut : public PayOff
-{
+class PayOffPut : public PayOff {
+
 public:
     PayOffPut(double Strike_);
-    virtual double operator()(double Spot) const;
-    virtual ~PayOffPut(){}
+    virtual double operator() (double Spot) const override;
+    virtual ~PayOffPut() {};
+
 private:
     double Strike;
 };
+
 #endif //DERIVATIVESPRICER_PAYOFF2_H

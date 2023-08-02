@@ -10,4 +10,5 @@ private:
     double Strike;
     OptionType TheOptionsType;
 };
+
 #endif //DERIVATIVESPRICER_PAYOFF1_H

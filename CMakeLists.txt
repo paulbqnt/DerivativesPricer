@@ -15,4 +15,11 @@ add_executable(DerivativesPricer
         "chapter 2 - Encapsulation/SimpleMCMain2.cpp"
         Headers/PayOff2.h
         "chapter 3 - Inheritance and virtual functions/PayOff2.cpp"
+        "chapter 3 - Inheritance and virtual functions/SimpleMCMain3.cpp"
+        Headers/SimpleMC2.h
+        "chapter 3 - Inheritance and virtual functions/SimpleMC2.cpp"
+        "chapter 3 - Inheritance and virtual functions/SimpleMCMain4.cpp"
+        Headers/DoubleDigital.h
+        "chapter 3 - Inheritance and virtual functions/DoubleDigital.cpp"
+        "chapter 3 - Inheritance and virtual functions/SimpleMCMain5.cpp"
 )
